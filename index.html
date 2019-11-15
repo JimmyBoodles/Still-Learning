@@ -2,6 +2,21 @@
 <html>
   <head>
     <style>
+      .nav{
+     width:fit-content;
+     height:fit-content;
+     display:block;
+     margin: 0 auto;
+     text-align: center;
+}
+.nav li{
+     list-style:none;
+     float:left;
+     margin-left:20px;
+     margin-right:20px;
+     display: block;
+     color: red;
+      }
       body {
         color: white;
         background-image: linear-gradient(to right, red, blue);
@@ -29,9 +44,12 @@
     <meta charset="UTF-8">
     <title>My First Page</title>
   </head>
-  <body>
-    <h1>Home</h1> 
-    <a href="index2.html" target="_self">About</a>
+  <body> 
+    <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+     <li><a href="index2.html">About</a></li>
+     <li><a href="#">Link</a></li>
+</ul>
     <h2>Welcome to the laptop lab</h2>
     <p>In the laptop lab, we will use laptops. The lab is taught by Professor Obama. Please take a seat and we can get started.</p>
     <a href="http://www.google.com/">Google</a>
