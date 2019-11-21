@@ -19,6 +19,22 @@
       body {
         color: white;
         background-image: linear-gradient(to right, red, blue);
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 1s;
+      }
+
+      /* Safari 4.0 - 8.0 */
+      @-webkit-keyframes example {
+        from {background-image: linear-gradient(to right, red, blue);}
+        to {background-image: linear-gradient(to right, green, yellow);}
+      }
+
+      /* Standard syntax */
+      @keyframes example {
+        from {background-image: linear-gradient(to right, red, blue);}
+        to {background-image: linear-gradient(to right, green, yellow);}
       }
        h1 {
         color: #ff0000;
